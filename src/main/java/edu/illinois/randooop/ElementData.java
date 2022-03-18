@@ -2,7 +2,7 @@ package edu.illinois.randooop;
 
 import java.util.List;
 
-public class ExecutableData {
+public class ElementData {
 
 	String canonicalName;
 	
@@ -12,7 +12,7 @@ public class ExecutableData {
 	String name;
 	List<String> parameters;
 	
-	public ExecutableData(
+	public ElementData(
 			String canonicalName,
 			Boolean isConstructor, Boolean staticState,
 			String returnType, String name,
@@ -25,17 +25,13 @@ public class ExecutableData {
 		this.parameters = parameters;
 	}
 	
-	public ExecutableData() {
-		System.out.println("Testing again...");
-	}
-	
 	@Override
 	public String toString() {
 		String constructorOrMethod = "";
 		if (isConstructor) {
 			constructorOrMethod += "constructor";
 		} else {
-			constructorOrMethod += "methode";
+			constructorOrMethod += "method";
 		}
 		String str = 
 				"canonical name: " + canonicalName + "\n" +
