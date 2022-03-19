@@ -5,63 +5,72 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 
-public class TestPool implements Pool {
+public class TestPool {
 	private List<PoolElement> pool;
 	private HashSet<String> listOfTypes;
 	private Random rand;
 	
-	public TestPool(int seedQuantity) {
+	public TestPool(List<PoolElement> initPool) {
 		pool = new ArrayList<PoolElement>();
 		listOfTypes = new HashSet<String>();
 		rand = new Random();
-		initPool(seedQuantity);
-	}
-	
-	private void initPool(int seedQuantity) {
 		
+		pool.addAll(initPool);
 	}
 	
-	private void generateSeedElement(int quantity, String type) {
-		
-	}
-	
-	private boolean validPoolElement(PoolElement element, String returnType) {
+	/**
+	 * Helper function to help determine whether a randomly chosen PoolElement is valid,
+	 *  that is, contains the specified type requested.
+	 * 
+	 * @param element randomly chosen PoolElement.
+	 * @param returnType requested type.
+	 * @return yes if sufficient.
+	 */
+	private boolean isValidPoolElement(PoolElement element, String returnType) {
 		if (element.getReturnTypes().contains(returnType)) {
 			return true;
 		}
 		return false;
 	}
 	
-	@Override
 	public PoolElement getElement(String returnType) {
 		if (!hasReturnType(returnType)) {
 			return null;
 		}
 		PoolElement element;
-		// O(n) lmao
+
+		/* 
+		 * Tries to randomly find an element that satisfies the request type.
+		 * We set the total amount of tries to the size of the pool.
+		 * This is due to performance consideration, and is O(n).
+		 */
 		int poolSize = pool.size();
 		for (int i = 0; i < poolSize; i++) {
 			element = pool.get(rand.nextInt(poolSize));
-			if (validPoolElement(element, returnType)) {
+			if (isValidPoolElement(element, returnType)) {
 				return element;
 			}
 		}
 
-		// No luck. Start at random index and randomly (index %2) go left or right
+		/* 
+		 * No luck by sampling with uniform randomness. 		
+		 * With a random starting index, we perform a linear search that wraps around.
+		 * We try to avoid favoring higher index values by randomizing the search direction.
+		 * While this is less random, we consider it sufficient and also has performance of O(n). 
+		 */
 		int index = rand.nextInt(poolSize);
 		int direction = index % 2 == 0 ? 1 : -1;
 		for (int i = 0; i < poolSize; i++) {
 			element = pool.get(index);
-			if (validPoolElement(element, returnType)) {
+			if (isValidPoolElement(element, returnType)) {
 				return element;
 			}
 			index = Math.floorMod((index + direction), poolSize);
 		}
-		// this should not be happening...
+		// this should never happen...
 		return null;
 	}
 
-	@Override
 	public void addElement(PoolElement testCase) {
 		updateTypes(testCase);
 		pool.add(testCase);
@@ -71,19 +80,26 @@ public class TestPool implements Pool {
 		listOfTypes.addAll(testCase.getReturnTypes());
 	}
 
-	@Override
 	public boolean hasElement(PoolElement testCase) {
 		if (pool.contains(testCase)) {
 			return true;
 		}
 		return false;
 	}
-
-	@Override
+	
 	public boolean hasReturnType(String returnType) {
 		if (listOfTypes.contains(returnType)) {
 			return true;
 		}
 		return false;
 	}
+	
+	public boolean hasReturnTypes(List<String> parameters) {
+		if (listOfTypes.containsAll(parameters)) {
+			return true;
+		}
+		return false;
+	}
+	
+	// TODO: generate primPool; basic pool with primitive types.
 }

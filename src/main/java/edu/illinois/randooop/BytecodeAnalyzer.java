@@ -238,7 +238,7 @@ public class BytecodeAnalyzer {
 	 * @param names         input list.
 	 * @param parameters    input list.
 	 */
-	private void insertAPIKeyPairs(HashMap<String, ElementData> api, boolean isConstructor,
+	private void insertAPIKeyPairs(HashMap<String, APIElement> api, boolean isConstructor,
 			List<Boolean> staticStates, List<String> returnTypes, List<String> names, List<List<String>> parameters) {
 
 		// TODO: check if this is the right way to do this...
@@ -248,7 +248,7 @@ public class BytecodeAnalyzer {
 		int length = canonicalNames.size();
 
 		for (int i = 0; i < length; i++) {
-			ElementData exeData = new ElementData(canonicalNames.get(i), isConstructor, staticStates.get(i),
+			APIElement exeData = new APIElement(canonicalNames.get(i), isConstructor, staticStates.get(i),
 					returnTypes.get(i), names.get(i), parameters.get(i));
 			api.put(canonicalNames.get(i), exeData);
 		}
@@ -262,8 +262,8 @@ public class BytecodeAnalyzer {
 	 * @param cls input class.
 	 * @return API in the format of a HashMap.
 	 */
-	public HashMap<String, ElementData> generateAPIList(Class<?> cls) {
-		HashMap<String, ElementData> api = new HashMap<String, ElementData>();
+	public HashMap<String, APIElement> generateAPIList(Class<?> cls) {
+		HashMap<String, APIElement> api = new HashMap<String, APIElement>();
 		List<Executable> constructors = getConstructors(cls);
 		List<String> constructorNames = getNames(constructors);
 		List<String> constructorReturnTypes = getReturnTypes(constructors);

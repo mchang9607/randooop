@@ -53,14 +53,8 @@ public class PoolElement {
 		this.typeToVarNameMap = typeToVarNameMap;
 	}
 	
-	// TODO: should this belong to the Pool or TestBuilder rather than here?
-	public String randomVarName(String type, int index) {
-		if (!returnTypes.contains(type)) {
-			return null;
-		}
-		List<String> names = typeToVarNameMap.get(type);
-		index = index % names.size();
-		return names.get(index);
+	public String getSequence() {
+		return this.testSequence;
 	}
 	
 	public HashSet<String> getReturnTypes() {

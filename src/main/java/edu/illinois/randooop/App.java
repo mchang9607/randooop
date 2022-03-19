@@ -25,11 +25,21 @@ public class App {
     public static void main( String[] args ) {
         try {
         	
-        	File file = new File("./joda-time-2.10.13/");
+        	File file = new File("/home/bernkastel79/Downloads/joda-time-2.10.13/");
         	//File file = new File("/home/bernkastel79/Downloads");
         	BytecodeAnalyzer bca = new BytecodeAnalyzer();
         	Class<?> cls = bca.getClassObject(file, "org.joda.time.Days");
-        	System.out.println(bca.generateAPIList(cls));
+        	//System.out.println(bca.generateAPIList(cls));
+        	
+        	HashSet<String> s1 = new HashSet<String>();
+        	HashSet<String> s2 = new HashSet<String>();
+        	s1.add("hello");
+        	s2.addAll(s1);
+        	List<String> help = new ArrayList<String>();
+        	help.addAll(s2);
+        	for (String str: help) {
+        		System.out.println(str);
+        	}
         	
         	/*        	
          	Field[] fields = cls.getFields();
