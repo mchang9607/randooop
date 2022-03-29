@@ -61,7 +61,10 @@ public class BytecodeAnalyzer {
 	 */
 	public List<Executable> getConstructors(Class<?> cls) {
 		List<Executable> constructors = new ArrayList<Executable>();
-		//Constructor<?>[]  = cls.getConstructors();		
+		Constructor<?>[] constructorsArray  = cls.getConstructors();		
+		for (Constructor<?> constructor : constructorsArray) {
+			constructors.add(constructor);
+		}
 		
 		return constructors;
 	}
@@ -238,7 +241,7 @@ public class BytecodeAnalyzer {
 	 * @param names         input list.
 	 * @param parameters    input list.
 	 */
-	private void insertAPIKeyPairs(HashMap<String, APIElement> api, boolean isConstructor,
+	private void insertAPIKeyPairs(HashMap<String, APIElement> api, String className, boolean isConstructor,
 			List<Boolean> staticStates, List<String> returnTypes, List<String> names, List<List<String>> parameters) {
 
 		// TODO: check if this is the right way to do this...
@@ -248,7 +251,7 @@ public class BytecodeAnalyzer {
 		int length = canonicalNames.size();
 
 		for (int i = 0; i < length; i++) {
-			APIElement exeData = new APIElement(canonicalNames.get(i), isConstructor, staticStates.get(i),
+			APIElement exeData = new APIElement(canonicalNames.get(i), className, isConstructor, staticStates.get(i),
 					returnTypes.get(i), names.get(i), parameters.get(i));
 			api.put(canonicalNames.get(i), exeData);
 		}
@@ -269,7 +272,7 @@ public class BytecodeAnalyzer {
 		List<String> constructorReturnTypes = getReturnTypes(constructors);
 		List<Boolean> constructorNotStatic = getStaticStates(constructors, true);
 		List<List<String>> constructorParameters = getAllParameters(constructors);
-		insertAPIKeyPairs(api, true, constructorNotStatic, constructorReturnTypes, constructorNames,
+		insertAPIKeyPairs(api, cls.getName(), true, constructorNotStatic, constructorReturnTypes, constructorNames,
 				constructorParameters);
 
 		List<Executable> methods = getMethods(cls);
@@ -277,7 +280,7 @@ public class BytecodeAnalyzer {
 		List<String> methodReturnTypes = getReturnTypes(methods);
 		List<Boolean> methodStaticStates = getStaticStates(methods, false);
 		List<List<String>> methodParameters = getAllParameters(methods);
-		insertAPIKeyPairs(api, false, methodStaticStates, methodReturnTypes, methodNames, methodParameters);
+		insertAPIKeyPairs(api, cls.getName(), false, methodStaticStates, methodReturnTypes, methodNames, methodParameters);
 
 		return api;
 	}

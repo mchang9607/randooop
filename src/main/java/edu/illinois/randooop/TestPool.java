@@ -15,7 +15,7 @@ public class TestPool {
 		listOfTypes = new HashSet<String>();
 		rand = new Random();
 		
-		pool.addAll(initPool);
+		//pool.addAll(initPool);
 	}
 	
 	/**
@@ -31,7 +31,8 @@ public class TestPool {
 			return true;
 		}
 		return false;
-	}
+		
+		}
 	
 	public PoolElement getElement(String returnType) {
 		if (!hasReturnType(returnType)) {

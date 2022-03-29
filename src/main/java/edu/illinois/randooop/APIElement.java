@@ -4,22 +4,24 @@ import java.util.List;
 
 public class APIElement {
 
-	String canonicalName;
+	private final String canonicalName;
 	
-	APIElementType elementType;
-	Boolean isConstructor;
-	Boolean staticState;
-	String returnType;
-	String name;
-	List<String> parameters;
+	private final String parentClass;
+	private final Boolean constructor;
+	private final Boolean staticState;
+	private final String returnType;
+	private final String name;
+	private final List<String> parameters;
 	
 	public APIElement(
 			String canonicalName,
-			Boolean isConstructor, Boolean staticState,
+			String parentClass,
+			Boolean constructor, Boolean staticState,
 			String returnType, String name,
 			List<String> parameters) {
 		this.canonicalName = canonicalName;
-		this.isConstructor = isConstructor;
+		this.parentClass = parentClass;
+		this.constructor = constructor;
 		this.staticState = staticState;
 		this.returnType = returnType;
 		this.name = name;
@@ -27,11 +29,31 @@ public class APIElement {
 	}
 	
 	public String getCanonicalName() {
-		return canonicalName;
+		return this.canonicalName;
+	}
+	
+	public String getParentClass() {
+		return this.parentClass;
+	}
+	
+	public String getReturnType() {
+		return this.returnType;
 	}
 	
 	public List<String> getParams() {
-		return parameters;
+		return this.parameters;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public Boolean isConstructor() {
+		return this.constructor;
+	}
+	
+	public Boolean isStatic() {
+		return this.staticState;
 	}
 	
 	// TODO: getters for various fields?
@@ -39,7 +61,7 @@ public class APIElement {
 	@Override
 	public String toString() {
 		String constructorOrMethod = "";
-		if (isConstructor) {
+		if (constructor) {
 			constructorOrMethod += "constructor";
 		} else {
 			constructorOrMethod += "method";

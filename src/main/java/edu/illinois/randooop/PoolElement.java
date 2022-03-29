@@ -6,13 +6,24 @@ import java.util.HashSet;
 import java.util.List;
 
 public class PoolElement {
-	final String testSequence;
-	final HashSet<String> returnTypes;
-	final HashSet<String> varNames;
-	final HashMap<String, List<String>> typeToVarNameMap;
+	private final String code;
+	private final String assignments;
+	private final HashSet<String> returnTypes;
+	private final HashSet<String> varNames;
+	private final HashMap<String, List<String>> typeToVarNameMap;
 
-	public PoolElement(String testSequence, String returnType, String varName) {
-		this.testSequence = testSequence;
+	
+	/**
+	 * Constructor of PoolElement built from scratch.
+	 * That is, a PoolElement constructed with this constructor has not "parent".
+	 * The purpose of such a constructor is to initialize the pool.
+	 * It is hence expected that returnType should be a primitive type.
+	 * Note that this constructor does not prune void return types due to the purpose of its design.
+	 */
+	public PoolElement(String code, String assignments, 
+			String returnType, String varName) {
+		this.code = code;
+		this.assignments = assignments;
 		
 		HashSet<String> returnTypes = new HashSet<String>();
 		returnTypes.add(returnType);
@@ -29,32 +40,21 @@ public class PoolElement {
 		this.typeToVarNameMap = typeToVarNameMap;
 	}
 	
-	public PoolElement(PoolElement parent, String testSequence, String returnType, String varName) {
-		this.testSequence = testSequence;
-		
-		HashSet<String> returnTypes = new HashSet<String>();
-		returnTypes.addAll(parent.getReturnTypes());
-		returnTypes.add(returnType);
+	public PoolElement(String code, String assignments,
+			HashSet<String> returnTypes, HashSet<String> varNames, HashMap<String, List<String>> typeToVarNameMap) {
+		this.code = code;
+		this.assignments = assignments;
 		this.returnTypes = returnTypes;
-		
-		HashSet<String> varNames = new HashSet<String>();
-		varNames.addAll(parent.getVarNames());
-		varNames.add(varName);
 		this.varNames = varNames;
-		
-		HashMap<String, List<String>> typeToVarNameMap = new HashMap<String, List<String>>();
-		typeToVarNameMap.putAll(parent.getTypeToVarNameMap());
-		List<String> varNamesList = new ArrayList<String>();
-		if (typeToVarNameMap.containsKey(returnType)) {
-			varNamesList.addAll(typeToVarNameMap.get(returnType));
-		}
-		varNamesList.add(varName);
-		typeToVarNameMap.put(returnType, varNamesList);
 		this.typeToVarNameMap = typeToVarNameMap;
 	}
+		
+	public String getCode() {
+		return this.code;
+	}
 	
-	public String getSequence() {
-		return this.testSequence;
+	public String getAssignments() {
+		return this.assignments;
 	}
 	
 	public HashSet<String> getReturnTypes() {
