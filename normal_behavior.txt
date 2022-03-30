@@ -1,0 +1,2324 @@
+/**
+ *
+ */
+public class classNameTest {
+
+    /**
+     *
+     */
+     	@Test1
+	   public void TestJunit() {
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              j18.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test2
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType e88;
+              e88 = org.joda.time.DurationFieldType.centuries();
+              e88.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test3
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator a76;
+              a76 = org.joda.time.DateTimeComparator.getTimeOnlyInstance();
+              a76.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test4
+	   public void TestJunit() {
+              org.joda.time.MutableInterval e69;
+              e69 = new org.joda.time.MutableInterval();
+              assertTrue(e69.equals(e69));
+	}
+
+
+    /**
+     *
+     */
+     	@Test5
+	   public void TestJunit() {
+              org.joda.time.PeriodType n27;
+              n27 = org.joda.time.PeriodType.months();
+              n27.equals(n27);
+	}
+
+
+    /**
+     *
+     */
+     	@Test6
+	   public void TestJunit() {
+              org.joda.time.MutableDateTime q32;
+              q32 = new org.joda.time.MutableDateTime();
+              q32.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test7
+	   public void TestJunit() {
+              org.joda.time.MutablePeriod m93;
+              org.joda.time.PeriodType n27;
+              n27 = org.joda.time.PeriodType.months();
+              m93 = new org.joda.time.MutablePeriod(n27);
+              m93.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test8
+	   public void TestJunit() {
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime l62;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              l62 = j18.withWeekOfWeekyear(x);
+              j18.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test9
+	   public void TestJunit() {
+              org.joda.time.PeriodType n27;
+              org.joda.time.PeriodType x54;
+              n27 = org.joda.time.PeriodType.months();
+              x54 = n27.withHoursRemoved();
+              n27.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test10
+	   public void TestJunit() {
+              org.joda.time.tz.NameProvider i45;
+              i45 = org.joda.time.DateTimeZone.getNameProvider();
+              assertTrue(i45.equals(i45));
+	}
+
+
+    /**
+     *
+     */
+     	@Test11
+	   public void TestJunit() {
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              i66.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test12
+	   public void TestJunit() {
+              org.joda.time.MonthDay l36;
+              l36 = new org.joda.time.MonthDay();
+              l36.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test13
+	   public void TestJunit() {
+              org.joda.time.PeriodType n27;
+              org.joda.time.PeriodType c35;
+              n27 = org.joda.time.PeriodType.months();
+              c35 = n27.withMonthsRemoved();
+              n27.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test14
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType h71;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              h71.equals(h71);
+	}
+
+
+    /**
+     *
+     */
+     	@Test18
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.DateTimeFieldType h71;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              i39.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test20
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DateTimeFieldType h71;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              i39.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test21
+	   public void TestJunit() {
+              java.util.Map<java.lang.String, org.joda.time.DateTimeZone> h2;
+              h2 = org.joda.time.DateTimeUtils.getDefaultTimeZoneNames();
+              h2.equals(h2);
+	}
+
+
+    /**
+     *
+     */
+     	@Test22
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              l24.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test23
+	   public void TestJunit() {
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime l62;
+              org.joda.time.LocalDateTime r52;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              l62 = j18.withWeekOfWeekyear(x);
+              r52 = j18.withYearOfCentury(x);
+              j18.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test24
+	   public void TestJunit() {
+              org.joda.time.PeriodType t90;
+              t90 = org.joda.time.PeriodType.standard();
+              t90.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test25
+	   public void TestJunit() {
+              org.joda.time.TimeOfDay x96;
+              x96 = new org.joda.time.TimeOfDay();
+              assertTrue(x96.equals(x96));
+	}
+
+
+    /**
+     *
+     */
+     	@Test26
+	   public void TestJunit() {
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              f92.equals(f92);
+	}
+
+
+    /**
+     *
+     */
+     	@Test27
+	   public void TestJunit() {
+              org.joda.time.PeriodType k26;
+              k26 = org.joda.time.PeriodType.standard();
+              assertTrue(k26.equals(k26));
+	}
+
+
+    /**
+     *
+     */
+     	@Test28
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              assertTrue(l24.equals(l24));
+	}
+
+
+    /**
+     *
+     */
+     	@Test30
+	   public void TestJunit() {
+              java.util.Map<java.lang.String, org.joda.time.DateTimeZone> f69;
+              f69 = org.joda.time.DateTimeUtils.getDefaultTimeZoneNames();
+              f69.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test31
+	   public void TestJunit() {
+              org.joda.time.PeriodType k26;
+              org.joda.time.PeriodType b16;
+              k26 = org.joda.time.PeriodType.standard();
+              b16 = k26.withMinutesRemoved();
+              assertTrue(k26.equals(k26));
+	}
+
+
+    /**
+     *
+     */
+     	@Test32
+	   public void TestJunit() {
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int o44;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              o44 = f92.getSeconds();
+              assertTrue(f92.equals(f92));
+	}
+
+
+    /**
+     *
+     */
+     	@Test35
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              i39.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test36
+	   public void TestJunit() {
+              org.joda.time.PeriodType z21;
+              z21 = org.joda.time.PeriodType.days();
+              z21.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test37
+	   public void TestJunit() {
+              org.joda.time.LocalDate n31;
+              n31 = new org.joda.time.LocalDate();
+              n31.equals(n31);
+	}
+
+
+    /**
+     *
+     */
+     	@Test38
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              assertTrue(l24.equals(l24));
+	}
+
+
+    /**
+     *
+     */
+     	@Test40
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType x59;
+              x59 = org.joda.time.DurationFieldType.weekyears();
+              assertTrue(x59.equals(x59));
+	}
+
+
+    /**
+     *
+     */
+     	@Test41
+	   public void TestJunit() {
+              java.util.Set<java.lang.String> l5;
+              l5 = org.joda.time.DateTimeZone.getAvailableIDs();
+              l5.equals(l5);
+	}
+
+
+    /**
+     *
+     */
+     	@Test42
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Period l24;
+              org.joda.time.Seconds f92;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.MutablePeriod t93;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              t93 = new org.joda.time.MutablePeriod(x, x, x, x);
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test43
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay v66;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x96 = new org.joda.time.TimeOfDay();
+              v66 = x96.plusMinutes(x);
+              i39.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test44
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Period z16;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              z16 = l24.normalizedStandard();
+              assertTrue(l24.equals(l24));
+	}
+
+
+    /**
+     *
+     */
+     	@Test45
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              t22.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test46
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.DateTimeFieldType c16;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              c16 = i39.getUpperLimit();
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test47
+	   public void TestJunit() {
+              org.joda.time.PeriodType t75;
+              t75 = org.joda.time.PeriodType.yearMonthDayTime();
+              t75.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test48
+	   public void TestJunit() {
+              org.joda.time.YearMonth c98;
+              c98 = new org.joda.time.YearMonth();
+              c98.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test49
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              boolean e19;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              e19 = t22.isLessThan(t22);
+              t22.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test52
+	   public void TestJunit() {
+              org.joda.time.Partial s54;
+              s54 = new org.joda.time.Partial();
+              s54.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test58
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              i39.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test61
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Period z16;
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds g41;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay v66;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime f27;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              z16 = l24.normalizedStandard();
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x96 = new org.joda.time.TimeOfDay();
+              v66 = x96.plusMinutes(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f27 = j18.withDate(x, x, x);
+              l24.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test62
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              boolean e19;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int b32;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              e19 = t22.isLessThan(t22);
+              b32 = x96.getHourOfDay();
+              t22.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test64
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType d85;
+              d85 = org.joda.time.DateTimeFieldType.clockhourOfDay();
+              d85.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test66
+	   public void TestJunit() {
+              org.joda.time.PeriodType i22;
+              i22 = org.joda.time.PeriodType.weeks();
+              assertTrue(i22.equals(i22));
+	}
+
+
+    /**
+     *
+     */
+     	@Test67
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType w51;
+              w51 = org.joda.time.DateTimeFieldType.clockhourOfDay();
+              w51.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test68
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial s54;
+              org.joda.time.Partial u18;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.DateTimeFieldType c16;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              c16 = i39.getUpperLimit();
+              s54 = new org.joda.time.Partial();
+              u18 = s54.without(c16);
+              i39.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test69
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType v48;
+              v48 = org.joda.time.DateTimeFieldType.halfdayOfDay();
+              v48.equals(v48);
+	}
+
+
+    /**
+     *
+     */
+     	@Test72
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Period l24;
+              org.joda.time.Period z16;
+              org.joda.time.Partial y27;
+              org.joda.time.Partial p44;
+              org.joda.time.Seconds g41;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay v66;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.DateTimeFieldType c16;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime f27;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              c16 = i39.getUpperLimit();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              z16 = l24.normalizedStandard();
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x96 = new org.joda.time.TimeOfDay();
+              v66 = x96.plusMinutes(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f27 = j18.withDate(x, x, x);
+              p44 = y27.without(h71);
+              i39.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test74
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Period l24;
+              org.joda.time.Seconds f92;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              java.util.Date u31;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.MutablePeriod t93;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              t93 = new org.joda.time.MutablePeriod(x, x, x, x);
+              u31 = j18.toDate();
+              i39.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test78
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Period d16;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              d16 = org.joda.time.Period.months(x);
+              assertTrue(l24.equals(l24));
+	}
+
+
+    /**
+     *
+     */
+     	@Test79
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Period t91;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay v66;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x96 = new org.joda.time.TimeOfDay();
+              v66 = x96.plusMinutes(x);
+              t91 = org.joda.time.Period.months(x);
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test88
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Period h86;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay v66;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              x96 = new org.joda.time.TimeOfDay();
+              v66 = x96.plusMinutes(x);
+              h86 = org.joda.time.Period.millis(x);
+              i39.equals(i39);
+	}
+
+
+    /**
+     *
+     */
+     	@Test94
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator j23;
+              j23 = org.joda.time.DateTimeComparator.getDateOnlyInstance();
+              assertTrue(j23.equals(j23));
+	}
+
+
+    /**
+     *
+     */
+     	@Test95
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType w52;
+              w52 = org.joda.time.DurationFieldType.eras();
+              w52.equals(w52);
+	}
+
+
+    /**
+     *
+     */
+     	@Test96
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType e54;
+              e54 = org.joda.time.DateTimeFieldType.clockhourOfHalfday();
+              assertTrue(e54.equals(e54));
+	}
+
+
+    /**
+     *
+     */
+     	@Test98
+	   public void TestJunit() {
+              org.joda.time.TimeOfDay x96;
+              int c77;
+              x96 = new org.joda.time.TimeOfDay();
+              c77 = x96.getMinuteOfHour();
+              x96.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test100
+	   public void TestJunit() {
+              org.joda.time.PeriodType d30;
+              d30 = org.joda.time.PeriodType.months();
+              assertTrue(d30.equals(d30));
+	}
+
+
+    /**
+     *
+     */
+     	@Test102
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.DateTimeFieldType d98;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              d98 = i39.getUpperLimit();
+              i39.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test103
+	   public void TestJunit() {
+              org.joda.time.LocalDate b15;
+              b15 = new org.joda.time.LocalDate();
+              b15.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test105
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.Period d16;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime l31;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              d16 = org.joda.time.Period.months(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              l31 = j18.withCenturyOfEra(x);
+              t22.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test112
+	   public void TestJunit() {
+              org.joda.time.YearMonthDay o17;
+              o17 = new org.joda.time.YearMonthDay();
+              o17.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test118
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType i59;
+              i59 = org.joda.time.DurationFieldType.eras();
+              i59.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test126
+	   public void TestJunit() {
+              org.joda.time.Period u13;
+              u13 = new org.joda.time.Period();
+              assertTrue(u13.equals(u13));
+	}
+
+
+    /**
+     *
+     */
+     	@Test132
+	   public void TestJunit() {
+              org.joda.time.TimeOfDay z73;
+              z73 = new org.joda.time.TimeOfDay();
+              z73.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test133
+	   public void TestJunit() {
+              org.joda.time.Instant s83;
+              s83 = new org.joda.time.Instant();
+              assertTrue(s83.equals(s83));
+	}
+
+
+    /**
+     *
+     */
+     	@Test134
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Years h85;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test136
+	   public void TestJunit() {
+              org.joda.time.Instant s83;
+              org.joda.time.DateTime g16;
+              s83 = new org.joda.time.Instant();
+              g16 = s83.toDateTimeISO();
+              s83.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test140
+	   public void TestJunit() {
+              org.joda.time.tz.NameProvider b51;
+              b51 = org.joda.time.DateTimeZone.getNameProvider();
+              b51.equals(b51);
+	}
+
+
+    /**
+     *
+     */
+     	@Test145
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.DateTimeZone o71;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              o71 = org.joda.time.DateTimeZone.forOffsetMillis(x);
+              t22.equals(t22);
+	}
+
+
+    /**
+     *
+     */
+     	@Test146
+	   public void TestJunit() {
+              org.joda.time.PeriodType w10;
+              w10 = org.joda.time.PeriodType.yearMonthDay();
+              w10.equals(w10);
+	}
+
+
+    /**
+     *
+     */
+     	@Test148
+	   public void TestJunit() {
+              java.util.Set<java.lang.String> e22;
+              e22 = org.joda.time.DateTimeZone.getAvailableIDs();
+              e22.equals(e22);
+	}
+
+
+    /**
+     *
+     */
+     	@Test159
+	   public void TestJunit() {
+              org.joda.time.YearMonth t25;
+              t25 = org.joda.time.YearMonth.now();
+              t25.equals(t25);
+	}
+
+
+    /**
+     *
+     */
+     	@Test162
+	   public void TestJunit() {
+              java.util.Map<java.lang.String, org.joda.time.DateTimeZone> f69;
+              f69 = org.joda.time.DateTimeUtils.getDefaultTimeZoneNames();
+              org.joda.time.DateTimeUtils.setDefaultTimeZoneNames(f69);
+              f69.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test164
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Years h85;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.PeriodType x65;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              x65 = h85.getPeriodType();
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test166
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType g15;
+              g15 = org.joda.time.DurationFieldType.eras();
+              g15.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test168
+	   public void TestJunit() {
+              java.util.Map<java.lang.String, org.joda.time.DateTimeZone> f69;
+              f69 = org.joda.time.DateTimeUtils.getDefaultTimeZoneNames();
+              org.joda.time.DateTimeUtils.setDefaultTimeZoneNames(f69);
+              f69.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test169
+	   public void TestJunit() {
+              org.joda.time.PeriodType f56;
+              f56 = org.joda.time.PeriodType.yearWeekDayTime();
+              f56.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test170
+	   public void TestJunit() {
+              org.joda.time.Instant u5;
+              u5 = new org.joda.time.Instant();
+              u5.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test171
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.Period o5;
+              boolean e19;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int b32;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              e19 = t22.isLessThan(t22);
+              b32 = x96.getHourOfDay();
+              o5 = l24.normalizedStandard();
+              t22.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test175
+	   public void TestJunit() {
+              java.util.Set<java.lang.String> u74;
+              u74 = org.joda.time.DateTimeZone.getAvailableIDs();
+              u74.equals(u74);
+	}
+
+
+    /**
+     *
+     */
+     	@Test177
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.DateTimeZone o71;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.MonthDay l90;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              o71 = org.joda.time.DateTimeZone.forOffsetMillis(x);
+              l90 = new org.joda.time.MonthDay(o71);
+              t22.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test178
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType s78;
+              s78 = org.joda.time.DurationFieldType.halfdays();
+              s78.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test184
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.DateTimeZone o71;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.MonthDay l90;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int a94;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              o71 = org.joda.time.DateTimeZone.forOffsetMillis(x);
+              l90 = new org.joda.time.MonthDay(o71);
+              a94 = g56.getHourOfDay();
+              assertTrue(t22.equals(t22));
+	}
+
+
+    /**
+     *
+     */
+     	@Test189
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Years h85;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int y38;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              y38 = h85.getYears();
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test192
+	   public void TestJunit() {
+              org.joda.time.DurationFieldType r88;
+              r88 = org.joda.time.DurationFieldType.centuries();
+              r88.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test197
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Period c81;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int o44;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              o44 = f92.getSeconds();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              c81 = l24.withYears(x);
+              assertTrue(l24.equals(l24));
+	}
+
+
+    /**
+     *
+     */
+     	@Test202
+	   public void TestJunit() {
+              org.joda.time.tz.NameProvider i56;
+              i56 = org.joda.time.DateTimeZone.getNameProvider();
+              i56.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test209
+	   public void TestJunit() {
+              org.joda.time.Instant s83;
+              org.joda.time.Instant n59;
+              org.joda.time.DateTime g16;
+              long w87;
+              w87 = org.joda.time.DateTimeUtils.currentTimeMillis();
+              s83 = new org.joda.time.Instant();
+              g16 = s83.toDateTimeISO();
+              n59 = s83.plus(w87);
+              s83.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test213
+	   public void TestJunit() {
+              org.joda.time.Duration h93;
+              long w87;
+              w87 = org.joda.time.DateTimeUtils.currentTimeMillis();
+              h93 = org.joda.time.Duration.standardMinutes(w87);
+              h93.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test221
+	   public void TestJunit() {
+              org.joda.time.PeriodType a36;
+              a36 = org.joda.time.PeriodType.hours();
+              a36.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test224
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Years h85;
+              org.joda.time.Years n28;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.PeriodType x65;
+              int x;
+              int y38;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              x65 = h85.getPeriodType();
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              y38 = h85.getYears();
+              n28 = h85.minus(h85);
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test226
+	   public void TestJunit() {
+              org.joda.time.Period l24;
+              org.joda.time.Period d16;
+              org.joda.time.Period c42;
+              org.joda.time.Weeks i66;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              d16 = org.joda.time.Period.months(x);
+              c42 = org.joda.time.Period.days(x);
+              l24.equals(l24);
+	}
+
+
+    /**
+     *
+     */
+     	@Test227
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.Period o5;
+              org.joda.time.DateTimeZone w14;
+              boolean e19;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime l62;
+              org.joda.time.LocalDateTime r52;
+              int x;
+              int b32;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              l62 = j18.withWeekOfWeekyear(x);
+              r52 = j18.withYearOfCentury(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              e19 = t22.isLessThan(t22);
+              b32 = x96.getHourOfDay();
+              o5 = l24.normalizedStandard();
+              w14 = org.joda.time.DateTimeZone.forOffsetHoursMinutes(x, x);
+              t22.equals(t22);
+	}
+
+
+    /**
+     *
+     */
+     	@Test228
+	   public void TestJunit() {
+              org.joda.time.Minutes t22;
+              org.joda.time.Period l24;
+              org.joda.time.Period o5;
+              org.joda.time.DateTimeZone w14;
+              boolean e19;
+              org.joda.time.Seconds g41;
+              org.joda.time.Weeks i66;
+              org.joda.time.Instant s83;
+              org.joda.time.Instant n59;
+              org.joda.time.TimeOfDay x96;
+              org.joda.time.TimeOfDay g56;
+              org.joda.time.DateTime g16;
+              org.joda.time.DateTime j11;
+              org.joda.time.LocalDateTime j18;
+              org.joda.time.LocalDateTime l62;
+              org.joda.time.LocalDateTime r52;
+              long w87;
+              int x;
+              int b32;
+              w87 = org.joda.time.DateTimeUtils.currentTimeMillis();
+              s83 = new org.joda.time.Instant();
+              g16 = s83.toDateTimeISO();
+              n59 = s83.plus(w87);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              l62 = j18.withWeekOfWeekyear(x);
+              r52 = j18.withYearOfCentury(x);
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              l24 = org.joda.time.Period.millis(x);
+              g41 = i66.toStandardSeconds();
+              x96 = new org.joda.time.TimeOfDay();
+              g56 = x96.minusHours(x);
+              t22 = i66.toStandardMinutes();
+              e19 = t22.isLessThan(t22);
+              b32 = x96.getHourOfDay();
+              o5 = l24.normalizedStandard();
+              w14 = org.joda.time.DateTimeZone.forOffsetHoursMinutes(x, x);
+              j11 = new org.joda.time.DateTime(w87, w14);
+              t22.equals(t22);
+	}
+
+
+    /**
+     *
+     */
+     	@Test232
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType d44;
+              d44 = org.joda.time.DateTimeFieldType.clockhourOfHalfday();
+              d44.equals(d44);
+	}
+
+
+    /**
+     *
+     */
+     	@Test241
+	   public void TestJunit() {
+              org.joda.time.DateTimeFieldType z45;
+              z45 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              z45.hashCode();
+	}
+
+
+    /**
+     *
+     */
+     	@Test245
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Partial s54;
+              org.joda.time.Partial l9;
+              org.joda.time.Seconds f92;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.DateTimeFieldType d98;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              d98 = i39.getUpperLimit();
+              s54 = new org.joda.time.Partial();
+              l9 = s54.with(h71, x);
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test258
+	   public void TestJunit() {
+              org.joda.time.PeriodType f56;
+              f56 = org.joda.time.PeriodType.seconds();
+              f56.toString();
+	}
+
+
+    /**
+     *
+     */
+     	@Test259
+	   public void TestJunit() {
+              org.joda.time.PeriodType t75;
+              org.joda.time.PeriodType d35;
+              t75 = org.joda.time.PeriodType.yearMonthDayTime();
+              d35 = t75.withMinutesRemoved();
+              assertTrue(t75.equals(t75));
+	}
+
+
+    /**
+     *
+     */
+     	@Test273
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Years h85;
+              org.joda.time.Years c93;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              int x;
+              int y38;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              y38 = h85.getYears();
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              y38 = h85.getYears();
+              c93 = h85.minus(h85);
+              i39.equals(i39);
+	}
+
+
+    /**
+     *
+     */
+     	@Test276
+	   public void TestJunit() {
+              org.joda.time.DateTimeZone k33;
+              k33 = org.joda.time.DateTimeZone.getDefault();
+              assertTrue(k33.equals(k33));
+	}
+
+
+    /**
+     *
+     */
+     	@Test291
+	   public void TestJunit() {
+              org.joda.time.DateTimeComparator i39;
+              org.joda.time.Partial y27;
+              org.joda.time.Seconds f92;
+              org.joda.time.Years h85;
+              org.joda.time.Weeks i66;
+              org.joda.time.DurationFieldType b48;
+              org.joda.time.DurationFieldType v11;
+              org.joda.time.DateTimeFieldType h71;
+              org.joda.time.LocalDateTime j18;
+              java.lang.String m88;
+              int x;
+              h71 = org.joda.time.DateTimeFieldType.weekyearOfCentury();
+              i39 = org.joda.time.DateTimeComparator.getInstance(h71);
+              b48 = h71.getRangeDurationType();
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              x=10;
+              j18 = new org.joda.time.LocalDateTime(x, x, x, x, x, x);
+              i66 = org.joda.time.Weeks.weeks(x);
+              f92 = i66.toStandardSeconds();
+              y27 = new org.joda.time.Partial(h71, x);
+              v11 = h71.getRangeDurationType();
+              h85 = org.joda.time.Years.years(x);
+              m88 = h85.toString();
+              assertTrue(i39.equals(i39));
+	}
+
+
+    /**
+     *
+     */
+     	@Test293
+	   public void TestJunit() {
+              org.joda.time.MutablePeriod x35;
+              x35 = new org.joda.time.MutablePeriod();
+              assertTrue(x35.equals(x35));
+	}
+
+   }
