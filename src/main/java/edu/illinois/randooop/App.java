@@ -24,6 +24,7 @@ import javassist.CtMethod;
  */
 public class App {
     public static void main( String[] args ) {
+    	
         try {
         	
         	File dir = new File("/home/bernkastel79/Downloads/schoolwork/lmz/joda-time-2.10.13/");
@@ -48,13 +49,22 @@ public class App {
         		}
         	}
         	List<String> list = new ArrayList<String>();
-        	TestPool tp = new TestPool(null);
+        	PoolElement prim = new PoolElement("int x;\nx=10;\n", "x=10;\n", "int", "x");
+        	List<PoolElement> initializer = new ArrayList<PoolElement>();
+        	initializer.add(prim);
+        	TestPool tp = new TestPool(initializer);
         	TestBuilder tb = new TestBuilder(api, tp);
         	PoolElement pe;
+        	//System.out.println(tp.listOfTypes);
         	for (int i = 0; i < 10; i++) {
         		pe = tb.generateNewTest();
-        		System.out.println(tb.getTestString(pe));
+        		//System.out.println(pe.getCode());
+        		//System.out.println();
         		tp.addElement(pe);
+        	}
+        	for (PoolElement element : tp.pool) {
+        		System.out.println(element.getCode());
+        		System.out.println();
         	}
         	
         	//System.out.println(api);

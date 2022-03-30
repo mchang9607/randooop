@@ -12,7 +12,6 @@ public class PoolElement {
 	private final HashSet<String> varNames;
 	private final HashMap<String, List<String>> typeToVarNameMap;
 
-	
 	/**
 	 * Constructor of PoolElement built from scratch.
 	 * That is, a PoolElement constructed with this constructor has not "parent".

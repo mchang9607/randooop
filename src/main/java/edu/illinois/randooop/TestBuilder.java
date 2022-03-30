@@ -36,7 +36,7 @@ public class TestBuilder {
 		List<String> requirements = new ArrayList<String>();
 		requirements.addAll(element.getParams());
 		// callables require receivers unless they are static or constructors
-		if ((!element.isConstructor()) || (!element.isStatic())) {
+		if ((!element.isConstructor()) && (!element.isStatic())) {
 			if (!requirements.contains(element.getParentClass())) {
 				requirements.add(element.getParentClass());
 			}
@@ -56,7 +56,7 @@ public class TestBuilder {
 			}
 			requirements.clear();
 		}
-
+		
 		int index = rand.nextInt(apiSize);
 		int direction = index % 2 == 0 ? 1 : -1;
 		for (int i = 0; i < apiSize; i++) {
@@ -65,10 +65,11 @@ public class TestBuilder {
 			if (pool.hasReturnTypes(requirements)) {
 				return callable;
 			}
+			
 			index = Math.floorMod((index + direction), apiSize);
 			requirements.clear();
 		}
-		
+		System.out.println("In TestBuilder.getCallable. No callable found...");
 		// this should never happen...
 		return null;
 	}
@@ -143,10 +144,12 @@ public class TestBuilder {
 	private String getNewVarName(APIElement element, HashSet<String> varNames) {
 		String newVarName = null;
 		if (!element.getReturnType().equals("void")) {
-			while (varNames.contains(newVarName)) {
+			while (varNames.contains(newVarName) || newVarName == null) {
 				newVarName = generateVarname();
+				//System.out.println(newVarName);
 			}
 		}
+		//System.out.println(newVarName);
 		return newVarName;
 	}
 	

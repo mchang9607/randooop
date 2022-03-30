@@ -6,16 +6,20 @@ import java.util.List;
 import java.util.Random;
 
 public class TestPool {
-	private List<PoolElement> pool;
+	public List<PoolElement> pool;
 	private HashSet<String> listOfTypes;
 	private Random rand;
 	
 	public TestPool(List<PoolElement> initPool) {
+		
 		pool = new ArrayList<PoolElement>();
 		listOfTypes = new HashSet<String>();
 		rand = new Random();
 		
-		//pool.addAll(initPool);
+		pool.addAll(initPool);
+		for (PoolElement init : initPool) {
+			listOfTypes.addAll(init.getReturnTypes());
+		}
 	}
 	
 	/**
@@ -96,6 +100,7 @@ public class TestPool {
 	}
 	
 	public boolean hasReturnTypes(List<String> parameters) {
+		
 		if (listOfTypes.containsAll(parameters)) {
 			return true;
 		}
