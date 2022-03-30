@@ -27,8 +27,8 @@ public class App {
     	
         try {
         	
-        	File dir = new File("/home/bernkastel79/Downloads/schoolwork/lmz/joda-time-2.10.13/");
-        	File actualDirLol = new File("/home/bernkastel79/Downloads/schoolwork/lmz/joda-time-2.10.13/org/joda/time");
+        	File dir = new File("<path>/joda-time-2.10.13/");
+        	File actualDirLol = new File("<path>/joda-time-2.10.13/org/joda/time");
         	File[] classes = actualDirLol.listFiles();
         	//File file = new File("/home/bernkastel79/Downloads");
         	BytecodeAnalyzer bca = new BytecodeAnalyzer();
