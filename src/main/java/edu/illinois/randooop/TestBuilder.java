@@ -208,10 +208,6 @@ public class TestBuilder {
 		return call;
 	}
 
-	public String getTestString(PoolElement test) {		
-		return test.getCode();
-	}
-
 	public PoolElement generateNewTest() {
 		APIElement increment = getCallable();
 		List<PoolElement> argsData = getArgsData(increment);
@@ -227,12 +223,16 @@ public class TestBuilder {
 		String call = setCallable(increment, argsData, newVarName, returnTypes, varNames, typeToVarNameMap);
 		
 		String incrementCode = buildIncrementCode(newVarName, receiver, call);
-		String assignments = buildAssignments(argsData, incrementCode);
+		String assignments = buildAssignments(parents, incrementCode);
 		String declarations = buildDeclarations(typeToVarNameMap);
 		String code = declarations + assignments;
 		
 		PoolElement test = new PoolElement(code, assignments, returnTypes, varNames, typeToVarNameMap);
 		return test;
 	}
-	
+
+	public String getTestString(PoolElement test) {		
+		return test.getCode();
+	}
+
 }
