@@ -41,23 +41,27 @@ public class TmpMain {
 	}
 
 	public static void main(String args[]) {
-		String packageName = "org.java.time";
-		String targetLocation = "E:\\\\360Downloads\\\\joda-time-2.10.13/";
+		String packageName = "org.joda.time";
+		String targetLocation = "/home/bernkastel79/eclipse-workspace/randooop/joda-time-2.10.13/";
 		File packageDir = new File(targetLocation);
-		File classFileDir = new File(targetLocation + packageName.replaceAll(".", "/"));
+		File classFileDir = new File(targetLocation + packageName.replaceAll("\\.", "/"));		
 		File[] classes = classFileDir.listFiles();
 		HashMap<String, APIElement> api = new HashMap<String, APIElement>();
 		BytecodeAnalyzer analyzer = new BytecodeAnalyzer();
 		for (File classFile : classes) {
-			String className = packageName + "." + FilenameUtils.removeExtension(classFile.getName());
-			try {
-				Class<?> cls = analyzer.getClassObject(packageDir, className);
-				if (cls.isInterface() || Modifier.isAbstract(cls.getModifiers())) {
-					continue;
+			if (FilenameUtils.getExtension(classFile.getName()).equals("class")) {
+				String className = packageName + "." + FilenameUtils.removeExtension(classFile.getName());				
+				try {
+					Class<?> cls = analyzer.getClassObject(packageDir, className);
+					if (cls.isInterface() || Modifier.isAbstract(cls.getModifiers())) {
+						continue;
+					}
+					api.putAll(analyzer.generateAPIList(cls));
+				} catch (MalformedURLException | ClassNotFoundException e) {
+					e.printStackTrace();
 				}
-				api.putAll(analyzer.generateAPIList(cls));
-			} catch (MalformedURLException | ClassNotFoundException e) {
-				e.printStackTrace();
+			} else {
+				continue;
 			}
 		}
 
@@ -86,7 +90,7 @@ public class TmpMain {
 			PoolElement test = builder.generateNewTest();
 			testsGenerated++;
 
-			String fileContent = constructFileContent(counter, test.getCode(), null, false);
+			String fileContent = constructFileContent(counter, test.getCode(), "", false);
 
 			Ast_parser parser_ast = new Ast_parser();
 			ArrayList<String> variables = parser_ast.getVarNames(fileContent);
