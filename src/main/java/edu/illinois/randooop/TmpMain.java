@@ -77,8 +77,8 @@ public class TmpMain {
 		File root = new File("./target/");
 
 		long startTime = System.currentTimeMillis();
-		int executionTimeSec = 30 * 60;
-		long duration = executionTimeSec * 60000;
+		int executionTimeSec = 10;
+		long duration = executionTimeSec * 1000;
 		int testsGenerated = 0;
 		int testsDiscarded = 0;
 		int counter = 0;
