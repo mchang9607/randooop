@@ -38,7 +38,7 @@ public class TestCaseRecorder {
 	}
 	
 	public void recordSequence(PoolElement testCase, String contract, boolean success) {
-		String code = testCase.getCode() + contract;
+		String code = processTestSequence(testCase, contract);
 		if (!success) {
 			error.add(code);
 		}
