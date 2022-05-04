@@ -1,0 +1,733 @@
+/**
+ *
+ */
+public class classNameTest {
+        /*
+         *Testcase Number:110
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval g81;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            g81 = new org.joda.time.Interval(long3, long1);
+            g81.toString();
+        }
+
+        /*
+         *Testcase Number:154
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval l36;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            l36 = new org.joda.time.MutableInterval(long3, long1);
+            l36.toString();
+        }
+
+        /*
+         *Testcase Number:157
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval g52;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            g52 = new org.joda.time.Interval(long3, long2);
+            assertTrue(g52.equals(g52));
+        }
+
+        /*
+         *Testcase Number:294
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval f78;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            f78 = new org.joda.time.Interval(long3, long1);
+            f78.toString();
+        }
+
+        /*
+         *Testcase Number:310
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval b86;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            b86 = new org.joda.time.MutableInterval(long1, long2);
+            b86.hashCode();
+        }
+
+        /*
+         *Testcase Number:372
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval t79;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            t79 = new org.joda.time.MutableInterval(long1, long2);
+            t79.toString();
+        }
+
+        /*
+         *Testcase Number:556
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval n62;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            n62 = new org.joda.time.MutableInterval(long1, long2);
+            n62.equals(n62);
+        }
+
+        /*
+         *Testcase Number:654
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval x36;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            x36 = new org.joda.time.MutableInterval(long1, long2);
+            x36.hashCode();
+        }
+
+        /*
+         *Testcase Number:690
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval q94;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            q94 = new org.joda.time.MutableInterval(long3, long2);
+            q94.equals(q94);
+        }
+
+        /*
+         *Testcase Number:717
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval p42;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            p42 = new org.joda.time.Interval(long1, long2);
+            p42.toString();
+        }
+
+        /*
+         *Testcase Number:785
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval x8;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            x8 = new org.joda.time.MutableInterval(long3, long2);
+            x8.equals(x8);
+        }
+
+        /*
+         *Testcase Number:863
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval r78;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            r78 = new org.joda.time.Interval(long3, long1);
+            r78.hashCode();
+        }
+
+        /*
+         *Testcase Number:971
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval y81;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            y81 = new org.joda.time.MutableInterval(long3, long1);
+            y81.hashCode();
+        }
+
+        /*
+         *Testcase Number:1035
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval v69;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            v69 = new org.joda.time.MutableInterval(long3, long2);
+            v69.toString();
+        }
+
+        /*
+         *Testcase Number:1227
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval h97;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            h97 = new org.joda.time.Interval(long3, long2);
+            h97.toString();
+        }
+
+        /*
+         *Testcase Number:1255
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval i93;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            i93 = new org.joda.time.MutableInterval(long1, long2);
+            i93.equals(i93);
+        }
+
+        /*
+         *Testcase Number:1286
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval g3;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            g3 = new org.joda.time.Interval(long1, long2);
+            assertTrue(g3.equals(g3));
+        }
+
+        /*
+         *Testcase Number:1290
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval s27;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            s27 = new org.joda.time.Interval(long3, long2);
+            s27.equals(s27);
+        }
+
+        /*
+         *Testcase Number:1321
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval o56;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            o56 = new org.joda.time.Interval(long3, long1);
+            o56.equals(o56);
+        }
+
+        /*
+         *Testcase Number:1346
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval j35;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            j35 = new org.joda.time.Interval(long3, long2);
+            j35.hashCode();
+        }
+
+        /*
+         *Testcase Number:1454
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval s65;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            s65 = new org.joda.time.Interval(long3, long1);
+            s65.equals(s65);
+        }
+
+        /*
+         *Testcase Number:1508
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval i29;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            i29 = new org.joda.time.Interval(long3, long1);
+            assertTrue(i29.equals(i29));
+        }
+
+        /*
+         *Testcase Number:1512
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval k79;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            k79 = new org.joda.time.Interval(long3, long1);
+            k79.hashCode();
+        }
+
+        /*
+         *Testcase Number:1532
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval r94;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            r94 = new org.joda.time.Interval(long1, long2);
+            r94.hashCode();
+        }
+
+        /*
+         *Testcase Number:1709
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval w99;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            w99 = new org.joda.time.MutableInterval(long3, long1);
+            w99.equals(w99);
+        }
+
+        /*
+         *Testcase Number:1787
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval g29;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            g29 = new org.joda.time.Interval(long3, long1);
+            assertTrue(g29.equals(g29));
+        }
+
+        /*
+         *Testcase Number:2202
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval r43;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            r43 = new org.joda.time.MutableInterval(long1, long2);
+            r43.toString();
+        }
+
+        /*
+         *Testcase Number:2204
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval h64;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            h64 = new org.joda.time.MutableInterval(long3, long1);
+            assertTrue(h64.equals(h64));
+        }
+
+        /*
+         *Testcase Number:2257
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval r50;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            r50 = new org.joda.time.Interval(long1, long2);
+            r50.equals(r50);
+        }
+
+        /*
+         *Testcase Number:2266
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval d63;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            d63 = new org.joda.time.MutableInterval(long3, long2);
+            d63.toString();
+        }
+
+        /*
+         *Testcase Number:2292
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval p85;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            p85 = new org.joda.time.MutableInterval(long3, long2);
+            assertTrue(p85.equals(p85));
+        }
+
+        /*
+         *Testcase Number:2592
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval p22;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            p22 = new org.joda.time.MutableInterval(long3, long1);
+            p22.toString();
+        }
+
+        /*
+         *Testcase Number:2810
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval r74;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            r74 = new org.joda.time.MutableInterval(long1, long2);
+            assertTrue(r74.equals(r74));
+        }
+
+        /*
+         *Testcase Number:3276
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval r87;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            r87 = new org.joda.time.Interval(long1, long2);
+            r87.hashCode();
+        }
+
+        /*
+         *Testcase Number:3439
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval w93;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            w93 = new org.joda.time.MutableInterval(long3, long1);
+            w93.equals(w93);
+        }
+
+        /*
+         *Testcase Number:3748
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval k72;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            k72 = new org.joda.time.MutableInterval(long3, long2);
+            k72.hashCode();
+        }
+
+        /*
+         *Testcase Number:4116
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval p78;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            p78 = new org.joda.time.MutableInterval(long3, long2);
+            p78.hashCode();
+        }
+
+        /*
+         *Testcase Number:4144
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval t62;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            t62 = new org.joda.time.Interval(long1, long2);
+            t62.toString();
+        }
+
+        /*
+         *Testcase Number:4835
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval a33;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            a33 = new org.joda.time.MutableInterval(long3, long2);
+            assertTrue(a33.equals(a33));
+        }
+
+        /*
+         *Testcase Number:5018
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval c75;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            c75 = new org.joda.time.MutableInterval(long3, long1);
+            assertTrue(c75.equals(c75));
+        }
+
+        /*
+         *Testcase Number:5121
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval m48;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            m48 = new org.joda.time.MutableInterval(long3, long1);
+            m48.hashCode();
+        }
+
+        /*
+         *Testcase Number:5958
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval w82;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            w82 = new org.joda.time.Interval(long3, long1);
+            w82.equals(w82);
+        }
+
+        /*
+         *Testcase Number:6355
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval e31;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            e31 = new org.joda.time.Interval(long1, long2);
+            assertTrue(e31.equals(e31));
+        }
+
+        /*
+         *Testcase Number:6636
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval t32;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            t32 = new org.joda.time.Interval(long1, long2);
+            t32.equals(t32);
+        }
+
+        /*
+         *Testcase Number:6848
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval o24;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            o24 = new org.joda.time.MutableInterval(long3, long1);
+            o24.toString();
+        }
+
+        /*
+         *Testcase Number:7309
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval r23;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            r23 = new org.joda.time.MutableInterval(long3, long1);
+            assertTrue(r23.equals(r23));
+        }
+
+        /*
+         *Testcase Number:7488
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval p45;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            p45 = new org.joda.time.Interval(long3, long1);
+            assertTrue(p45.equals(p45));
+        }
+
+        /*
+         *Testcase Number:8128
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval c86;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            c86 = new org.joda.time.Interval(long3, long2);
+            c86.equals(c86);
+        }
+
+        /*
+         *Testcase Number:8508
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval p25;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            p25 = new org.joda.time.MutableInterval(long3, long1);
+            p25.equals(p25);
+        }
+
+        /*
+         *Testcase Number:9012
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval a77;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            a77 = new org.joda.time.Interval(long3, long2);
+            assertTrue(a77.equals(a77));
+        }
+
+        /*
+         *Testcase Number:11309
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval i19;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            i19 = new org.joda.time.Interval(long3, long1);
+            i19.hashCode();
+        }
+
+        /*
+         *Testcase Number:13428
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval t30;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            t30 = new org.joda.time.Interval(long3, long2);
+            t30.toString();
+        }
+
+        /*
+         *Testcase Number:15256
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval y19;
+            long long1;
+            long long2;
+            long1 = 7;
+            long2 = 6;
+            y19 = new org.joda.time.MutableInterval(long1, long2);
+            assertTrue(y19.equals(y19));
+        }
+
+        /*
+         *Testcase Number:15455
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.MutableInterval h9;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            h9 = new org.joda.time.MutableInterval(long3, long1);
+            h9.hashCode();
+        }
+
+        /*
+         *Testcase Number:18292
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval b10;
+            long long3;
+            long long2;
+            long3 = 10;
+            long2 = 6;
+            b10 = new org.joda.time.Interval(long3, long2);
+            b10.hashCode();
+        }
+
+        /*
+         *Testcase Number:18674
+        */        @Test
+        public void TestJunit() {
+            org.joda.time.Interval h8;
+            long long3;
+            long long1;
+            long3 = 10;
+            long1 = 7;
+            h8 = new org.joda.time.Interval(long3, long1);
+            h8.toString();
+        }
+
+   }
