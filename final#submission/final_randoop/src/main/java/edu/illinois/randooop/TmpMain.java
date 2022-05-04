@@ -282,8 +282,8 @@ public class TmpMain {
 				String[] options = new String[3];
 				options[0] = "-cp";
 				options[1] = "./joda-time-2.10.13.jar:junit-4.13.2.jar";
-				
-				compilerResult = compiler.run(null, null, null, testFilePath);
+				options[2] = testFilePath;
+				compilerResult = compiler.run(null, null, null, options);
 				classLoader = URLClassLoader.newInstance(new URL[] { root.toURI().toURL() });
 
 				
