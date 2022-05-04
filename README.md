@@ -17,6 +17,7 @@ usage requirements:
 1. jar file of library to test
 2. uncompressed folder of library
 3. package name of library
+4. jar file of junit for program's auto-compilation dependencies
 
 modify before use:
 1. change directory to uncompressed library folder path (line104@TmpMain)
@@ -27,6 +28,7 @@ modify before use:
 NOTE: Main program is at TmpMain.java. DO NOT USE App.java!
 
 Credentials to implementation:
+
   Michael Chang:
   * APIElement
   * PoolElement
