@@ -5,16 +5,41 @@ Reimplementation of feedback directed random test generation.
 
 Inspired by Randoop.
 
-TODO:
-Provide interfaces to implement
-Actual implementation
-Program Evaluation
-
 1. get a list of APIs
 2. compose APIs atomically
 3. dump sequence (Can just be a string) into JUnit
-4. other
 
 Future plans (optional):
-1. Support bytecode analysis
-2. TBD
+1. improve performance
+2. introduce different types of randomness for comparision.
+
+usage requirements:
+1. jar file of library to test
+2. uncompressed folder of library
+3. package name of library
+
+modify before use:
+1. change directory to uncompressed library folder path (line104@TmpMain)
+2. change package name if not our benchmark (line103@TmpMain)
+3. for any runtime that is not 30 mins, change executionTimeSec to desired time in seconds (line138@TmpMain)
+4. edit arguments for compilation if not using our default benchmark (line284@TmpMain)
+
+NOTE: Main program is at TmpMain.java. DO NOT USE App.java!
+
+Credentials to implementation:
+  Michael Chang:
+  * APIElement
+  * PoolElement
+  * ByteCodeAnalyzer
+  * TestPool
+  * TestBuilder
+  * TestRecorder
+
+  * TmpMain (modified based off original App, maintainence)
+  
+  Bo Liu:
+  * Ast_parser
+  * contract_generator
+  * compileclass
+  * testcase_file_writer
+  * TmpMain (implementation of App)
