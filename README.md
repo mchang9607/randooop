@@ -36,7 +36,7 @@ Credentials to implementation:
   * TestPool
   * TestBuilder
   * TestRecorder
-    Other credits:
+  Other credits:
   * TmpMain (modified based off original App, maintainence)
   
   Bo Liu:
@@ -45,7 +45,7 @@ Credentials to implementation:
   * compileclass
   * testcase_file_writer
   * TmpMain (implementation of App)
-    other credits:
+  Other credits:
   * evaluation on randoop, randooop, evosuite.
 
 
